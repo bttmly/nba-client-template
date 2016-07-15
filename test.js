@@ -16,6 +16,9 @@ template.stats_endpoints.forEach(function (endpoint) {
   // console.log(endpoint.name);
   assertIsString(endpoint.name);
   assertIsString(endpoint.url);
+  if (endpoint.parameters.length === 0) {
+    throw new Error(endpoint.name + " has no parameters")
+  }
   endpoint.parameters.forEach(assertIsString);
   if (Object.keys(endpoint).length !== 3) {
     throw new Error(endpoint.name + " has more than three properties")
@@ -26,6 +29,9 @@ template.parameters.forEach(function (parameter) {
   // console.log(parameter.name);
   assertIsString(parameter.name);
   assertIsString(parameter.default);
+  if (parameter.values.length === 0) {
+    throw new Error(parameter.name + " has no values")
+  }
   parameter.values.forEach(assertIsString);
   if (Object.keys(parameter).length !== 3) {
     throw new Error(parameter.name + " has more than three properties")
