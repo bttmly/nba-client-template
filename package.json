@@ -5,6 +5,9 @@
   "directories": {
     "example": "examples"
   },
+  "scripts": {
+    "test": "node test"
+  },
   "author": "Nick Bottomley (github.com/nickb1080)",
   "license": "MIT",
   "main": "nba.json"
