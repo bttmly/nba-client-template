@@ -1,0 +1,38 @@
+{
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36",
+  "referrer": "http://stats.nba.com/scores/",
+  "endpoints": [{
+    "name": "player_profile",
+    "url": "http://stats.nba.com/stats/playerprofile",
+    "parameters": [
+      "Season",
+      "SeasonType",
+      "LeagueID",
+      "PlayerID",
+      "GraphStartSeason",
+      "GraphEndSeason",
+      "GraphStat",
+    ],
+    "defaults": {
+      "Season": "2015-16",
+      "SeasonType": "Regular Season",
+      "LeagueID": "00",
+      "PlayerID": "0",
+      "GraphStartSeason": "2015-16",
+      "GraphEndSeason": "2015-16",
+      "GraphStat": "PTS"
+    }
+  }],
+  "parameters": [
+    {
+      "name": "",
+      "default": "",
+      "type": "number",
+      "enumerated": false,
+      "values": [],
+    },
+    {
+
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "nba-client-template",
+  "version": "0.1.0",
+  "description": "JSON file from which to generate NBA API clients",
+  "directories": {
+    "example": "examples"
+  },
+  "author": "Nick Bottomley (github.com/nickb1080)",
+  "license": "MIT",
+  "dependencies": {
+    "change-case": "^3.0.0"
+  }
+}
