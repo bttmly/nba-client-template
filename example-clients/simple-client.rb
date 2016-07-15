@@ -13,34 +13,49 @@ end
 # this client doesn't implement parameter validation, though it can be derived
 # from the JSON data as well.
 
-
-
-# holds 'static' API call methods
 module NbaClient
-  data = JSON.parse(File.read(File.expand_path("../../nba.json", __FILE__))) 
+  
+  DATA = JSON.parse(File.read(File.expand_path("../../nba.json", __FILE__)))
 
-  parameters = {}
-  data["parameters"].each do |item|
-    parameters[item["name"]] = item
+  class Endpoint
+    
+    @@parameters = {}
+    DATA["parameters"].each do |item|
+      @@parameters[item["name"]] = item
+    end
+
+    attr_accessor :name, :defaults, :url
+
+    def initialize(info)
+      @parameters = info["parameters"]
+      @name = snake(info["name"])
+      @url = info["url"]
+      @defaults = @parameters.inject({}) do |defaults, param|
+        defaults[param] = @@parameters[param]["default"]
+        defaults
+      end
+    end
   end
 
-  data["stats_endpoints"].each do |endpoint|
-    name = snake(endpoint["name"])
-
-    define_method(name) do |params|
-      all_params = {}
-      endpoint["parameters"].each do |param|
-        value = params.fetch param, parameters[param]["default"]
-        all_params[param] = value || default
-      end
-      
+  class QueryString
+    def initialize(params)
       query = []
-      all_params.each {|param, value| query << URI.encode("#{param}=#{value}") }
-      query_str = "?" + query.join("&")
-      
-      url = endpoint["url"] + query_str
-      uri = URI(url)
-      JSON.parse open(uri, { "User-Agent" => data["user_agent"], "Referrer" => data["referrer"] }).read
+      params.each {|param, value| query << URI.encode("#{param}=#{value}") }
+      @query_str = "?" + query.join("&")
+    end
+
+    def to_s
+      @query_str
+    end
+  end
+
+  DATA["stats_endpoints"].each do |ep|
+    endpoint = Endpoint.new ep
+    define_method(endpoint.name) do |args|
+      params = endpoint.defaults.merge args
+      query_str = QueryString.new(params).to_s
+      uri = URI(endpoint.url + query_str)
+      JSON.parse open(uri, { "User-Agent" => DATA["user_agent"], "Referrer" => DATA["referrer"] }).read
     end
   end
 
