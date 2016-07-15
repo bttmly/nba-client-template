@@ -1,7 +1,7 @@
 var assert = require("assert");
 
 // ensure JSON is valid
-var template = require("./nba.json");
+var template = require("../nba.json");
 
 function assertIsString (s) {
   if (typeof s !== "string") {
