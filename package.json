@@ -1,6 +1,6 @@
 {
   "name": "nba-client-template",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "JSON file from which to generate NBA API clients",
   "directories": {
     "example": "examples"
