@@ -381,9 +381,9 @@
     },
     {
       "name": "PlayerID",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
@@ -615,16 +615,16 @@
     },
     {
       "name": "LastNGames",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
       "name": "OpponentTeamID",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
@@ -663,25 +663,23 @@
     },
     {
       "name": "StartPeriod",
-      "default": 0,
+      "default": "0",
       "values": [
         "0",
         "1",
         "2",
-        "3",
-        0
+        "3"
       ]
     },
     {
       "name": "PlayoffRound",
-      "default": 0,
+      "default": "0",
       "values": [
         "0",
         "1",
         "2",
         "3",
-        "4",
-        0
+        "4"
       ]
     },
     {
@@ -697,7 +695,7 @@
     },
     {
       "name": "Month",
-      "default": 0,
+      "default": "0",
       "values": [
         "0",
         "1",
@@ -711,29 +709,28 @@
         "9",
         "10",
         "11",
-        "12",
-        0
+        "12"
       ]
     },
     {
       "name": "RangeType",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
       "name": "StartRange",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
       "name": "EndRange",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
@@ -878,16 +875,16 @@
     },
     {
       "name": "TeamID",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
       "name": "DayOffset",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
@@ -899,9 +896,9 @@
     },
     {
       "name": "SeasonID",
-      "default": 0,
+      "default": "0",
       "values": [
-        0
+        "0"
       ]
     },
     {
@@ -999,9 +996,9 @@
     },
     {
       "name": "Counter",
-      "default": 1000,
+      "default": "1000",
       "values": [
-        1000
+        "1000"
       ]
     },
     {
