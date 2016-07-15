@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "description": "JSON file from which to generate NBA API clients",
   "directories": {
-    "example": "examples"
+    "example": "example-clients"
   },
   "scripts": {
     "test": "node test"
