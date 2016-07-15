@@ -7,8 +7,5 @@
   },
   "author": "Nick Bottomley (github.com/nickb1080)",
   "license": "MIT",
-  "dependencies": {
-    "change-case": "^3.0.0"
-  },
   "main": "nba.json"
 }

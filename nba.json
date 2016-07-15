@@ -508,11 +508,12 @@
     },
     {
       "name": "Conference",
+      "default": "",
       "values": [
         "All",
         "East",
         "West",
-        null
+        ""
       ]
     },
     {
@@ -531,6 +532,7 @@
     },
     {
       "name": "Division",
+      "default": "",
       "values": [
         "All",
         "Atlantic",
@@ -539,7 +541,7 @@
         "Pacific",
         "Southeast",
         "Southwest",
-        null
+        ""
       ]
     },
     {
@@ -627,7 +629,7 @@
     },
     {
       "name": "Period",
-      "default": 0,
+      "default": "0",
       "values": [
         "0",
         "1",
@@ -640,11 +642,11 @@
         "8",
         "9",
         "10",
-        0
       ]
     },
     {
       "name": "EndPeriod",
+      "default": "0",
       "values": [
         "0",
         "1",
@@ -657,7 +659,6 @@
         "8",
         "9",
         "10",
-        null
       ]
     },
     {
@@ -685,13 +686,13 @@
     },
     {
       "name": "PORound",
+      "default": "0",
       "values": [
         "0",
         "1",
         "2",
         "3",
         "4",
-        null
       ]
     },
     {
@@ -818,10 +819,11 @@
     },
     {
       "name": "PlayerScope",
+      "default": "",
       "values": [
         "All Players",
         "Rookies",
-        null
+        ""
       ]
     },
     {
@@ -865,9 +867,7 @@
     },
     {
       "name": "gameDate",
-      "values": [
-        null
-      ]
+      "values": []
     },
     {
       "name": "RookieYear",
@@ -926,11 +926,12 @@
     },
     {
       "name": "Position",
+      "default": "",
       "values": [
         "Forward",
         "Center",
         "Guard",
-        null
+        ""
       ]
     },
     {

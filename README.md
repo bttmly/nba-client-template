@@ -6,6 +6,6 @@ The file contains two primary parts: endpoints and parameters. Endpoints general
 
 The simplest and probably easiest implementation is to map each endpoint to a function accepting a single argument, that being a hash of `{parameter: value}`. To provide some examples in code, the `examples` folder contains two very, very basic client implementations, one in Ruby and the other in Python. Both are implemented pretty much the same way, and not at all idiomatic in the language, but should illustrate the general idea. For languages without highly dynamic reflection features, code generation might be used to create a client.
 
-A more full-featured Node.js client I developed can be seen at [nickb1080/nba](https://github.com/nickb1080/nba). It will be transitioned so that relevant parts are generated from the JSON presented here. The `from_js.coffee` script is here merely to facilitate that transition, and will be removed once this becomes the canonical source.
+A more full-featured Node.js client I developed can be seen at [nickb1080/nba](https://github.com/nickb1080/nba). The forthcoming major version release (3.0.0) will be largely generated from this module.
 
 
