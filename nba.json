@@ -395,11 +395,10 @@
     },
     {
       "name": "IsOnlyCurrentSeason",
-      "default": 1,
+      "default": "1",
       "values": [
         "0",
-        "1",
-        1
+        "1"
       ]
     },
     {
@@ -449,9 +448,9 @@
     },
     {
       "name": "GroupQuantity",
-      "default": 5,
+      "default": "5",
       "values": [
-        5
+        "5"
       ]
     },
     {
@@ -864,7 +863,8 @@
     },
     {
       "name": "gameDate",
-      "values": []
+      "default": "",
+      "values": [""]
     },
     {
       "name": "RookieYear",
