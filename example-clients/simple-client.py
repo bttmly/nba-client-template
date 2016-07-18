@@ -44,7 +44,6 @@ def make_endpoint(name, endpoint):
     for param in endpoint["parameters"]:
       value = params.get(param, parameters[param]["default"])
       all_params[param] = value
-    print all_params
 
     query = []
     for param, value in all_params.iteritems():
