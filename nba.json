@@ -3,7 +3,7 @@
   "referrer": "http://stats.nba.com/scores/",
   "stats_endpoints": [
     {
-      "name": "playerProfile",
+      "name": "player_profile",
       "url": "http://stats.nba.com/stats/playerprofile",
       "parameters": [
         "Season",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "name": "playerInfo",
+      "name": "player_info",
       "url": "http://stats.nba.com/stats/commonplayerinfo",
       "parameters": [
         "PlayerID",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "name": "playersInfo",
+      "name": "players_info",
       "url": "http://stats.nba.com/stats/commonallplayers",
       "parameters": [
         "LeagueID",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "name": "teamStats",
+      "name": "team_stats",
       "url": "http://stats.nba.com/stats/leaguedashteamstats",
       "parameters": [
         "Season",
@@ -65,7 +65,7 @@
       ]
     },
     {
-      "name": "teamSplits",
+      "name": "team_splits",
       "url": "http://stats.nba.com/stats/teamdashboardbygeneralsplits",
       "parameters": [
         "Season",
@@ -93,14 +93,14 @@
       ]
     },
     {
-      "name": "teamYears",
+      "name": "team_years",
       "url": "http://stats.nba.com/stats/commonteamyears",
       "parameters": [
         "LeagueID"
       ]
     },
     {
-      "name": "playerSplits",
+      "name": "player_splits",
       "url": "http://stats.nba.com/stats/playerdashboardbygeneralsplits",
       "parameters": [
         "Season",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "name": "playByPlay",
+      "name": "play_by_play",
       "url": "http://stats.nba.com/stats/playbyplay",
       "parameters": [
         "GameID",
@@ -182,7 +182,7 @@
       ]
     },
     {
-      "name": "teamHistoricalLeaders",
+      "name": "team_historical_leaders",
       "url": "http://stats.nba.com/stats/teamhistoricalleaders",
       "parameters": [
         "LeagueID",
@@ -191,7 +191,7 @@
       ]
     },
     {
-      "name": "teamInfoCommon",
+      "name": "team_info_common",
       "url": "http://stats.nba.com/stats/teaminfocommon",
       "parameters": [
         "LeagueID",
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "name": "commonTeamRoster",
+      "name": "common_team_roster",
       "url": "http://stats.nba.com/stats/commonteamroster",
       "parameters": [
         "LeagueID",
@@ -210,7 +210,7 @@
       ]
     },
     {
-      "name": "teamPlayerDashboard",
+      "name": "team_player_dashboard",
       "url": "http://stats.nba.com/stats/teamplayerdashboard",
       "parameters": [
         "MeasureType",
@@ -268,7 +268,7 @@
       ]
     },
     {
-      "name": "playerTracking",
+      "name": "player_tracking",
       "url": "http://stats.nba.com/stats/leaguedashptstats",
       "parameters": [
         "PtMeasureType",
