@@ -18,8 +18,7 @@ const urls = fs.readFileSync(path.join(__dirname, "/urls"), "utf8")
 function uriToEndpoint (uri) {
   const parsed = url.parse(uri, true);
   console.log("parsing", parsed.pathname);
-  const parameters = Object.keys(parsed.query)
-    .filter(p => parsed.query[p]);
+  const parameters = Object.keys(parsed.query);
   return {
     url: `${parsed.protocol}//${parsed.host}${parsed.pathname}`,
     parameters,
