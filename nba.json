@@ -422,7 +422,7 @@
       ]
     },
     {
-      "name": "team_stats",
+      "name": "player_tracking",
       "url": "http://stats.nba.com/stats/leaguedashptstats",
       "parameters": [
         "LastNGames",
