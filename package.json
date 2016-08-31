@@ -10,5 +10,10 @@
   },
   "author": "Nick Bottomley (github.com/nickb1080)",
   "license": "MIT",
-  "main": "nba.json"
+  "main": "nba.json",
+  "devDependencies": {
+    "lodash": "^4.15.0",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.1"
+  }
 }

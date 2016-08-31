@@ -291,6 +291,152 @@
         "StarterBench",
         "PlayerOrTeam"
       ]
+    },
+    {
+      "name": "homepage_v2",
+      "url": "http://stats.nba.com/stats/homepagev2",
+      "parameters": [
+        "GameScope",
+        "LeagueID",
+        "PlayerOrTeam",
+        "PlayerScope",
+        "Season",
+        "SeasonType",
+        "StatType"
+      ]
+    },
+    {
+      "name": "assist_tracker",
+      "url": "http://stats.nba.com/stats/assisttracker",
+      "parameters": [
+        "LeagueID",
+        "PerMode",
+        "Season",
+        "SeasonType"
+      ]
+    },
+    {
+      "name": "player_stats",
+      "url": "http://stats.nba.com/stats/leaguedashplayerstats",
+      "parameters": [
+        "LastNGames",
+        "LeagueID",
+        "MeasureType",
+        "Month",
+        "OpponentTeamID",
+        "PORound",
+        "PaceAdjust",
+        "PerMode",
+        "Period",
+        "PlusMinus",
+        "Rank",
+        "Season",
+        "SeasonType",
+        "TeamID"
+      ]
+    },
+    {
+      "name": "player_clutch",
+      "url": "http://stats.nba.com/stats/leaguedashplayerclutch",
+      "parameters": [
+        "AheadBehind",
+        "ClutchTime",
+        "LastNGames",
+        "LeagueID",
+        "MeasureType",
+        "Month",
+        "OpponentTeamID",
+        "PORound",
+        "PaceAdjust",
+        "PerMode",
+        "Period",
+        "PlusMinus",
+        "PointDiff",
+        "Rank",
+        "Season",
+        "SeasonType",
+        "TeamID"
+      ]
+    },
+    {
+      "name": "team_clutch",
+      "url": "http://stats.nba.com/stats/leaguedashteamclutch",
+      "parameters": [
+        "AheadBehind",
+        "ClutchTime",
+        "LastNGames",
+        "LeagueID",
+        "MeasureType",
+        "Month",
+        "OpponentTeamID",
+        "PORound",
+        "PaceAdjust",
+        "PerMode",
+        "Period",
+        "PlusMinus",
+        "PointDiff",
+        "Rank",
+        "Season",
+        "SeasonType",
+        "TeamID"
+      ]
+    },
+    {
+      "name": "player_shooting",
+      "url": "http://stats.nba.com/stats/leaguedashplayerptshot",
+      "parameters": [
+        "GeneralRange",
+        "LastNGames",
+        "LeagueID",
+        "Month",
+        "OpponentTeamID",
+        "PORound",
+        "PaceAdjust",
+        "PerMode",
+        "Period",
+        "PlusMinus",
+        "Rank",
+        "Season",
+        "SeasonType",
+        "TeamID"
+      ]
+    },
+    {
+      "name": "team_shooting",
+      "url": "http://stats.nba.com/stats/leaguedashteamptshot",
+      "parameters": [
+        "GeneralRange",
+        "LastNGames",
+        "LeagueID",
+        "Month",
+        "OpponentTeamID",
+        "PORound",
+        "PaceAdjust",
+        "PerMode",
+        "Period",
+        "PlusMinus",
+        "Rank",
+        "Season",
+        "SeasonType",
+        "TeamID"
+      ]
+    },
+    {
+      "name": "team_stats",
+      "url": "http://stats.nba.com/stats/leaguedashptstats",
+      "parameters": [
+        "LastNGames",
+        "LeagueID",
+        "Month",
+        "OpponentTeamID",
+        "PORound",
+        "PerMode",
+        "PlayerOrTeam",
+        "PtMeasureType",
+        "Season",
+        "SeasonType",
+        "TeamID"
+      ]
     }
   ],
   "parameters": [
@@ -1049,6 +1195,76 @@
         "PostTouch",
         "PaintTouch",
         ""
+      ]
+    },
+    {
+      "name": "DribbleRange",
+      "default": "",
+      "values": [
+        "0 Dribbles",
+        "1 Dribbles",
+        "2 Dribbles",
+        "3-6 Dribbles",
+        "7+ Dribbles"
+      ]
+    },
+    {
+      "name": "CloseDefDistRange",
+      "default": "",
+      "values": [
+        "0-2 Feet - Very Tight",
+        "2-4 Feet - Tight",
+        "4-6 Feet - Open",
+        "6+ Feet - Wide Open"
+      ]
+    },
+    {
+      "name": "ShotDistRange",
+      "default": "",
+      "values": [
+        ">=10.0"
+      ]
+    },
+    {
+      "name": "TouchTimeRange",
+      "default": "",
+      "values": [
+        "Touch < 2 Seconds",
+        "Touch 2-6 Seconds",
+        "Touch 6+ Seconds"
+      ]
+    },
+    {
+      "name": "GeneralRange",
+      "default": "",
+      "values": [
+        "Overall",
+        "Catch and Shoot",
+        "Pullups",
+        "Less Than 10 ft"
+      ]
+    },
+    {
+      "name": "StatType",
+      "default": "",
+      "values": [
+        "Traditional",
+        "Advanced",
+        "Tracking"
+      ]
+    },
+    {
+      "name": "ClutchTime",
+      "default": "",
+      "values": [
+        "Last 5 Minutes"
+      ]
+    },
+    {
+      "name": "PointDiff",
+      "default": "",
+      "values": [
+        "5"
       ]
     }
   ]
