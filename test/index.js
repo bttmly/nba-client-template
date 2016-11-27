@@ -1,4 +1,5 @@
 var assert = require("assert");
+var qs = require("querystring");
 
 // ensure JSON is valid
 var template = require("../nba.json");
@@ -37,3 +38,26 @@ template.parameters.forEach(function (parameter) {
     throw new Error(parameter.name + " has more than three properties")
   }
 });
+
+// const _ = require("lodash");
+// const nameIndexedParams = _.keyBy(template.parameters, "name");
+// const async = require("async");
+// const request = require("request");
+//
+// async.each(template.stats_endpoints, function (endpoint, next) {
+//   const defaults = {};
+//   endpoint.parameters.forEach(function (param) {
+//     defaults[param] = nameIndexedParams[param].default;
+//   });
+//   const url = endpoint.url + "?" + qs.stringify(defaults);
+//   request(url, function (err, resp) {
+//     if (resp.statusCode !== 200) {
+//       console.log("fail", endpoint.url, resp.body)
+//     } else {
+//       console.log("success", endpoint.url);
+//     }
+//     next(err)
+//   })
+// }, function (err) {
+//   console.log("done:", err);
+// });

@@ -173,6 +173,34 @@
       ]
     },
     {
+      "name": "box_score_summary",
+      "url": "http://stats.nba.com/stats/boxscoresummaryv2",
+      "parameters": [
+        "GameID",
+        "Season",
+        "SeasonType",
+        "RangeType",
+        "StartPeriod",
+        "EndPeriod",
+        "StartRange",
+        "EndRange"
+      ]
+    },
+    {
+      "name": "box_score",
+      "url": "http://stats.nba.com/stats/boxscoretraditionalv2",
+      "parameters": [
+        "GameID",
+        "Season",
+        "SeasonType",
+        "RangeType",
+        "StartPeriod",
+        "EndPeriod",
+        "StartRange",
+        "EndRange"
+      ]
+    },
+    {
       "name": "play_by_play",
       "url": "http://stats.nba.com/stats/playbyplay",
       "parameters": [

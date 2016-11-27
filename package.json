@@ -12,8 +12,9 @@
   "license": "MIT",
   "main": "nba.json",
   "devDependencies": {
-    "lodash": "^4.15.0",
-    "request": "^2.74.0",
+    "async": "^2.1.4",
+    "lodash": "^4.17.2",
+    "request": "^2.79.0",
     "request-promise": "^4.1.1"
   }
 }
