@@ -553,6 +553,7 @@
       ]
     },
     {
+      "name": "league_game_log",
       "url": "http://stats.nba.com/stats/leaguegamelog",
       "parameters": [
         "Counter",
@@ -567,6 +568,7 @@
       ]
     },
     {
+      "name": "league_leaders",
       "url": "http://stats.nba.com/stats/leagueLeaders",
       "parameters": [
         "LeagueID",
