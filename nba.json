@@ -4,15 +4,11 @@
   "stats_endpoints": [
     {
       "name": "player_profile",
-      "url": "http://stats.nba.com/stats/playerprofile",
+      "url": "http://stats.nba.com/stats/playerprofilev2",
       "parameters": [
-        "Season",
-        "SeasonType",
         "LeagueID",
-        "PlayerID",
-        "GraphStartSeason",
-        "GraphEndSeason",
-        "GraphStat"
+        "PerMode",
+        "PlayerID"
       ]
     },
     {
@@ -554,6 +550,31 @@
         "VsConference",
         "VsDivision",
         "Weight"
+      ]
+    },
+    {
+      "url": "http://stats.nba.com/stats/leaguegamelog",
+      "parameters": [
+        "Counter",
+        "DateFrom",
+        "DateTo",
+        "Direction",
+        "LeagueID",
+        "PlayerOrTeam",
+        "Season",
+        "SeasonType",
+        "Sorter"
+      ]
+    },
+    {
+      "url": "http://stats.nba.com/stats/leagueLeaders",
+      "parameters": [
+        "LeagueID",
+        "PerMode",
+        "Scope",
+        "Season",
+        "SeasonType",
+        "StatCategory"
       ]
     }
   ],
