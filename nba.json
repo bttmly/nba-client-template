@@ -21,6 +21,15 @@
       ]
     },
     {
+      "name": "league_standings",
+      "url": "http://stats.nba.com/stats/leaguestandings",
+      "parameters": [
+        "LeagueID",
+        "Season",
+        "SeasonType"
+      ]
+    },
+    {
       "name": "players_info",
       "url": "http://stats.nba.com/stats/commonallplayers",
       "parameters": [
@@ -1310,6 +1319,7 @@
         ""
       ]
     },
+
     {
       "name": "PlayerPosition",
       "default": "",
