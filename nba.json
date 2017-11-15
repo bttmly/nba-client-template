@@ -580,6 +580,15 @@
       ]
     },
     {
+      "name": "league_standings",
+      "url": "http://stats.nba.com/stats/leaguestandings",
+      "parameters": [
+        "LeagueID",
+        "Season",
+        "SeasonType"
+      ]
+    },
+    {
       "name": "player_hustle_leaders",
       "url": "http://stats.nba.com/stats/leaguehustlestatsplayerleaders",
       "parameters": [
