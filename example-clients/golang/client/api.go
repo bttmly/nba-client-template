@@ -1,24 +1,25 @@
 package nba
 
 import (
-  "net/http"
-  "net/url"
-  "bytes"
+	"net/http"
 )
 
-func mapToQueryString(data map[string]string) string { 
-    var buf bytes.Buffer
-    buf.WriteString("?")
-    for k, v := range data {
-        buf.WriteString(url.QueryEscape(k)) 
-        buf.WriteString("=")
-        buf.WriteString(url.QueryEscape(v)) 
-        buf.WriteString("&")
-    } 
-    return buf.String()
-} 
+func apiGet(reqURL string, params map[string]string) (*http.Response, error) {
+	client := &http.Client{}
+	req, err := http.NewRequest("GET", reqURL, nil)
 
-func apiGet (url string, params map[string]string) (*http.Response, error) {
-  qs := mapToQueryString(params)
-  return http.Get(url + qs)
+	q := req.URL.Query()
+	for k, v := range params {
+		q.Add(k, v)
+	}
+	req.URL.RawQuery = q.Encode()
+
+	req.Header.Set("User-Agent", UserAgent)
+	req.Header.Set("Referer", Referrer)
+	req.Header.Set("Origin", Origin)
+
+	if err != nil {
+		return nil, err
+	}
+	return client.Do(req)
 }

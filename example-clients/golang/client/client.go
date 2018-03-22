@@ -4,8 +4,14 @@ package nba
 
 import "net/http"
 
+const UserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
+
+const Referrer = "http://stats.nba.com/scores/"
+
+const Origin = "http://stats.nba.com"
+
 func PlayerProfile(params map[string]string) (resp *http.Response, err error) {
-    return apiGet("http://stats.nba.com/stats/playerprofile", params)
+    return apiGet("http://stats.nba.com/stats/playerprofilev2", params)
 }
 
 func PlayerInfo(params map[string]string) (resp *http.Response, err error) {
@@ -40,6 +46,14 @@ func Scoreboard(params map[string]string) (resp *http.Response, err error) {
     return apiGet("http://stats.nba.com/stats/scoreboard", params)
 }
 
+func BoxScoreSummary(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/boxscoresummaryv2", params)
+}
+
+func BoxScore(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/boxscoretraditionalv2", params)
+}
+
 func PlayByPlay(params map[string]string) (resp *http.Response, err error) {
     return apiGet("http://stats.nba.com/stats/playbyplay", params)
 }
@@ -66,4 +80,60 @@ func Lineups(params map[string]string) (resp *http.Response, err error) {
 
 func PlayerTracking(params map[string]string) (resp *http.Response, err error) {
     return apiGet("http://stats.nba.com/stats/leaguedashptstats", params)
+}
+
+func HomepageV2(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/homepagev2", params)
+}
+
+func AssistTracker(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/assisttracker", params)
+}
+
+func PlayerStats(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguedashplayerstats", params)
+}
+
+func PlayerClutch(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguedashplayerclutch", params)
+}
+
+func TeamClutch(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguedashteamclutch", params)
+}
+
+func PlayerShooting(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguedashplayerptshot", params)
+}
+
+func TeamShooting(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguedashteamptshot", params)
+}
+
+func LeagueGameLog(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguegamelog", params)
+}
+
+func LeagueLeaders(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leagueLeaders", params)
+}
+
+func LeagueStandings(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguestandings", params)
+}
+
+func PlayerHustleLeaders(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguehustlestatsplayerleaders", params)
+}
+
+func TeamHustleLeaders(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguehustlestatsteamleaders", params)
+}
+
+func PlayerHustle(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguehustlestatsplayer", params)
+}
+
+func TeamHustle(params map[string]string) (resp *http.Response, err error) {
+    return apiGet("http://stats.nba.com/stats/leaguehustlestatsteam", params)
 }
