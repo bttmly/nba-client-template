@@ -38,6 +38,7 @@ module NbaClient
     end
   end
 
+  # there's gotta be a built-in way of doing this but I couldn't find it quickly so... w/e
   class QueryString
     def initialize(params)
       query = []
@@ -56,7 +57,12 @@ module NbaClient
       params = endpoint.defaults.merge args
       query_str = QueryString.new(params).to_s
       uri = URI(endpoint.url + query_str)
-      JSON.parse open(uri, { "User-Agent" => DATA["user_agent"], "Referrer" => DATA["referrer"] }).read
+
+      JSON.parse open(uri, { 
+        "User-Agent" => DATA["user_agent"], 
+        "Referer" => DATA["referrer"], 
+        "Origin" => DATA["origin"],
+      }).read
     end
   end
 

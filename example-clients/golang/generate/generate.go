@@ -28,6 +28,7 @@ type Parameter struct {
 type Template struct {
 	UserAgent  string      `json:"user_agent"`
 	Referrer   string      `json:"referrer"`
+	Referer    string      `json:"referer"`
 	Origin     string      `json:"origin"`
 	Endpoints  []Endpoint  `json:"stats_endpoints"`
 	Parameters []Parameter `json:"parameters"`
@@ -68,7 +69,7 @@ func main() {
 	pieces = append(pieces, "// NOTE: This file was generated automatically, do not edit directly!")
 	pieces = append(pieces, "import \"net/http\"")
 	pieces = append(pieces, "const UserAgent = \""+tmpl.UserAgent+"\"")
-	pieces = append(pieces, "const Referrer = \""+tmpl.Referrer+"\"")
+	pieces = append(pieces, "const Referer = \""+tmpl.Referer+"\"")
 	pieces = append(pieces, "const Origin = \""+tmpl.Origin+"\"")
 	for _, ep := range tmpl.Endpoints {
 		pieces = append(pieces, makeMethodString(ep))

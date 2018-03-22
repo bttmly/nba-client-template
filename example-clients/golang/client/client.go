@@ -6,7 +6,7 @@ import "net/http"
 
 const UserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36"
 
-const Referrer = "http://stats.nba.com/scores/"
+const Referer = "http://stats.nba.com/scores/"
 
 const Origin = "http://stats.nba.com"
 

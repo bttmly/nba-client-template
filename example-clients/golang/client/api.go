@@ -15,7 +15,7 @@ func apiGet(reqURL string, params map[string]string) (*http.Response, error) {
 	req.URL.RawQuery = q.Encode()
 
 	req.Header.Set("User-Agent", UserAgent)
-	req.Header.Set("Referer", Referrer)
+	req.Header.Set("Referer", Referer)
 	req.Header.Set("Origin", Origin)
 
 	if err != nil {
