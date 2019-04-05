@@ -979,7 +979,8 @@
         "Last 2 Minutes",
         "Last 1 Minutes",
         "Last 30 Seconds",
-        "Last 10 Seconds"
+        "Last 10 Seconds",
+        ""
       ]
     },
     {
@@ -1461,7 +1462,8 @@
         "SpeedDistance",
         "ElbowTouch",
         "PostTouch",
-        "PaintTouch"
+        "PaintTouch",
+        ""
       ]
     },
     {
