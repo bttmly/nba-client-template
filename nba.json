@@ -695,6 +695,61 @@
         "VsDivision",
         "Weight"
       ]
+    },
+    {
+      "name": "team_player_on_off_details",
+      "url": "http://stats.nba.com/stats/teamplayeronoffdetails",
+      "parameters": [
+        "Season",
+        "SeasonType",
+        "LeagueID",
+        "TeamID",
+        "MeasureType",
+        "PerMode",
+        "PlusMinus",
+        "PaceAdjust",
+        "Rank",
+        "Outcome",
+        "Location",
+        "Month",
+        "SeasonSegment",
+        "DateFrom",
+        "DateTo",
+        "OpponentTeamID",
+        "VsConference",
+        "VsDivision",
+        "GameSegment",
+        "Period",
+        "LastNGames"
+      ]
+    },
+    {
+      "name": "player_compare",
+      "url": "http://stats.nba.com/stats/playercompare",
+      "parameters": [
+        "PlayerIDList",
+        "VsPlayerIDList",
+        "Season",
+        "SeasonType",
+        "LeagueID",
+        "MeasureType",
+        "PerMode",
+        "PlusMinus",
+        "PaceAdjust",
+        "Rank",
+        "Outcome",
+        "Location",
+        "Month",
+        "SeasonSegment",
+        "DateFrom",
+        "DateTo",
+        "OpponentTeamID",
+        "VsConference",
+        "VsDivision",
+        "GameSegment",
+        "Period",
+        "LastNGames"
+      ]
     }
   ],
   "parameters": [
@@ -1534,6 +1589,20 @@
       "default": "",
       "values": [
         "5"
+      ]
+    },
+    {
+      "name": "PlayerIDList",
+      "default": "0",
+      "values": [
+        "0"
+      ]
+    },
+    {
+      "name": "VsPlayerIDList",
+      "default": "0",
+      "values": [
+        "0"
       ]
     }
   ]
