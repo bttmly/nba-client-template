@@ -1,7 +1,7 @@
 {
   "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36",
-  "referrer": "http://stats.nba.com/scores/",
-  "referer": "http://stats.nba.com/scores/",
+  "referrer": "http://stats.nba.com/",
+  "referer": "http://stats.nba.com/",
   "origin": "http://stats.nba.com",
   "stats_endpoints": [
     {
