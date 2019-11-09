@@ -1,6 +1,11 @@
 # nba-client-template
+nba.com API endpoints encoded as JSON for easy client library development.
 
-This repo holds a JSON file that can be used to programmatically generate a client for the NBA's API. Since it's JSON, it should be trivially parseable by any language. It's currently published as an NPM module, but if you want it packaged up for your language of choice as well, please open an [issue](https://github.com/bttmly/nba-client-template/issues) or better yet, a [pull request](https://github.com/bttmly/nba-client-template/pulls). Thanks!
+## notice
+It appears that nba.com is in the process of slowly retiring the stats.nba.com/stats endpoints in favor of a new data.nba.com/data API. I plan to add those endpoints to this project at some point.
+
+## info
+This repo holds a JSON file that can be used to programmatically generate a client for the NBA's stats API. Since it's JSON, it should be trivially parseable by any language. It's currently published as an NPM module, but if you want it packaged up for your language of choice as well, please open an [issue](https://github.com/bttmly/nba-client-template/issues) or better yet, a [pull request](https://github.com/bttmly/nba-client-template/pulls). Thanks!
 
 The file contains two primary parts: endpoints and parameters. Endpoints should generally be mapped to methods on an API client. Each endpoint has a list of parameters that it accepts. Parameter objects hold some data about individual parameters -- specifically, what the parameter is called (`name`), its known values (`values`), its default value (`default`), and a boolean (`enumerated`) indicating whether its listed values encompass all valid values. These can be used to implement parameter validation.
 
