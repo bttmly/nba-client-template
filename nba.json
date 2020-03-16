@@ -200,7 +200,7 @@
     },
     {
       "name": "play_by_play",
-      "url": "http://stats.nba.com/stats/playbyplay",
+      "url": "http://stats.nba.com/stats/playbyplayv2",
       "parameters": [
         "GameID",
         "StartPeriod",
