@@ -1,8 +1,5 @@
-var assert = require("assert");
-var qs = require("querystring");
-
 // ensure JSON is valid
-var template = require("../nba.json");
+const template = require("../nba.json");
 
 function assertIsString (s) {
   if (typeof s !== "string") {
@@ -13,7 +10,7 @@ function assertIsString (s) {
 assertIsString(template.user_agent);
 assertIsString(template.referrer);
 
-template.stats_endpoints.forEach(function (endpoint) {
+template.stats_endpoints.forEach((endpoint) => {
   // console.log(endpoint.name);
   assertIsString(endpoint.name);
   assertIsString(endpoint.url);
@@ -26,7 +23,7 @@ template.stats_endpoints.forEach(function (endpoint) {
   }
 });
 
-template.parameters.forEach(function (parameter) {
+template.parameters.forEach((parameter) => {
   // console.log(parameter.name);
   assertIsString(parameter.name);
   assertIsString(parameter.default);
@@ -38,26 +35,3 @@ template.parameters.forEach(function (parameter) {
     throw new Error(parameter.name + " has more than three properties")
   }
 });
-
-// const _ = require("lodash");
-// const nameIndexedParams = _.keyBy(template.parameters, "name");
-// const async = require("async");
-// const request = require("request");
-//
-// async.each(template.stats_endpoints, function (endpoint, next) {
-//   const defaults = {};
-//   endpoint.parameters.forEach(function (param) {
-//     defaults[param] = nameIndexedParams[param].default;
-//   });
-//   const url = endpoint.url + "?" + qs.stringify(defaults);
-//   request(url, function (err, resp) {
-//     if (resp.statusCode !== 200) {
-//       console.log("fail", endpoint.url, resp.body)
-//     } else {
-//       console.log("success", endpoint.url);
-//     }
-//     next(err)
-//   })
-// }, function (err) {
-//   console.log("done:", err);
-// });
