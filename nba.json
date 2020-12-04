@@ -5,6 +5,14 @@
   "origin": "http://stats.nba.com",
   "stats_endpoints": [
     {
+      "name": "game_rotation",
+      "url": "http://stats.nba.com/stats/gamerotation",
+      "parameters": [
+        "GameID",
+        "LeagueID"
+      ]
+    },
+    {
       "name": "player_profile",
       "url": "http://stats.nba.com/stats/playerprofilev2",
       "parameters": [
@@ -200,7 +208,7 @@
     },
     {
       "name": "play_by_play",
-      "url": "http://stats.nba.com/stats/playbyplay",
+      "url": "http://stats.nba.com/stats/playbyplayv2",
       "parameters": [
         "GameID",
         "StartPeriod",
