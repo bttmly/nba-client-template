@@ -7,37 +7,22 @@
     {
       "name": "game_rotation",
       "url": "http://stats.nba.com/stats/gamerotation",
-      "parameters": [
-        "GameID",
-        "LeagueID"
-      ]
+      "parameters": ["GameID", "LeagueID"]
     },
     {
       "name": "player_profile",
       "url": "http://stats.nba.com/stats/playerprofilev2",
-      "parameters": [
-        "LeagueID",
-        "PerMode",
-        "PlayerID"
-      ]
+      "parameters": ["LeagueID", "PerMode", "PlayerID"]
     },
     {
       "name": "player_info",
       "url": "http://stats.nba.com/stats/commonplayerinfo",
-      "parameters": [
-        "PlayerID",
-        "SeasonType",
-        "LeagueID"
-      ]
+      "parameters": ["PlayerID", "SeasonType", "LeagueID"]
     },
     {
       "name": "players_info",
       "url": "http://stats.nba.com/stats/commonallplayers",
-      "parameters": [
-        "LeagueID",
-        "Season",
-        "IsOnlyCurrentSeason"
-      ]
+      "parameters": ["LeagueID", "Season", "IsOnlyCurrentSeason"]
     },
     {
       "name": "team_stats",
@@ -101,12 +86,10 @@
     {
       "name": "team_years",
       "url": "http://stats.nba.com/stats/commonteamyears",
-      "parameters": [
-        "LeagueID"
-      ]
+      "parameters": ["LeagueID"]
     },
     {
-      "name": "player_splits",
+      "name": "general_splits",
       "url": "http://stats.nba.com/stats/playerdashboardbygeneralsplits",
       "parameters": [
         "Season",
@@ -130,6 +113,36 @@
         "GameSegment",
         "Period",
         "LastNGames"
+      ]
+    },
+    {
+      "name": "year_splits",
+      "url": "http://stats.nba.com/stats/playerdashboardbyyearoveryear",
+      "parameters": [
+        "DateFrom",
+        "DateTo",
+        "GameSegment",
+        "LastNGames",
+        "LeagueID",
+        "Location",
+        "MeasureType",
+        "Month",
+        "OpponentTeamID",
+        "Outcome",
+        "PORound",
+        "PaceAdjust",
+        "PerMode",
+        "Period",
+        "PlayerID",
+        "PlusMinus",
+        "Rank",
+        "Season",
+        "SeasonSegment",
+        "SeasonType",
+        "ShotClockRange",
+        "Split",
+        "VsConference",
+        "VsDivision"
       ]
     },
     {
@@ -172,11 +185,7 @@
     {
       "name": "scoreboard",
       "url": "http://stats.nba.com/stats/scoreboard",
-      "parameters": [
-        "LeagueID",
-        "DayOffset",
-        "gameDate"
-      ]
+      "parameters": ["LeagueID", "DayOffset", "gameDate"]
     },
     {
       "name": "box_score_summary",
@@ -208,40 +217,23 @@
     },
     {
       "name": "play_by_play",
-      "url": "http://stats.nba.com/stats/playbyplayv2",
-      "parameters": [
-        "GameID",
-        "StartPeriod",
-        "EndPeriod"
-      ]
+      "url": "http://stats.nba.com/stats/playbyplay",
+      "parameters": ["GameID", "StartPeriod", "EndPeriod"]
     },
     {
       "name": "team_historical_leaders",
       "url": "http://stats.nba.com/stats/teamhistoricalleaders",
-      "parameters": [
-        "LeagueID",
-        "Season",
-        "TeamID"
-      ]
+      "parameters": ["LeagueID", "Season", "TeamID"]
     },
     {
       "name": "team_info_common",
       "url": "http://stats.nba.com/stats/teaminfocommon",
-      "parameters": [
-        "LeagueID",
-        "Season",
-        "SeasonType",
-        "TeamID"
-      ]
+      "parameters": ["LeagueID", "Season", "SeasonType", "TeamID"]
     },
     {
       "name": "common_team_roster",
       "url": "http://stats.nba.com/stats/commonteamroster",
-      "parameters": [
-        "LeagueID",
-        "Season",
-        "TeamID"
-      ]
+      "parameters": ["LeagueID", "Season", "TeamID"]
     },
     {
       "name": "team_player_dashboard",
@@ -342,12 +334,7 @@
     {
       "name": "assist_tracker",
       "url": "http://stats.nba.com/stats/assisttracker",
-      "parameters": [
-        "LeagueID",
-        "PerMode",
-        "Season",
-        "SeasonType"
-      ]
+      "parameters": ["LeagueID", "PerMode", "Season", "SeasonType"]
     },
     {
       "name": "player_stats",
@@ -518,6 +505,133 @@
       ]
     },
     {
+      "name": "player_defense",
+      "url": "http://stats.nba.com/stats/leaguedashptdefend",
+      "parameters": [
+        "College",
+        "Conference",
+        "Country",
+        "DateFrom",
+        "DateTo",
+        "DefenseCategory",
+        "Division",
+        "DraftPick",
+        "DraftYear",
+        "GameSegment",
+        "Height",
+        "LastNGames",
+        "LeagueID",
+        "Location",
+        "Month",
+        "OpponentTeamID",
+        "Outcome",
+        "PORound",
+        "PerMode",
+        "Period",
+        "PlayerExperience",
+        "PlayerPosition",
+        "Season",
+        "SeasonSegment",
+        "SeasonType",
+        "StarterBench",
+        "TeamID",
+        "VsConference",
+        "VsDivision",
+        "Weight"
+      ]
+    },
+    {
+      "name": "player_play_type",
+      "url": "http://stats.nba.com/stats/synergyplaytypes",
+      "parameters": [
+        "LeagueID",
+        "PerMode",
+        "PlayType",
+        "PlayerOrTeam",
+        "SeasonType",
+        "SeasonYear",
+        "TypeGrouping"
+      ]
+    },
+    {
+      "name": "player_shot_locations",
+      "url": "http://stats.nba.com/stats/leaguedashplayershotlocations",
+      "parameters": [
+        "College",
+        "Conference",
+        "Country",
+        "DateFrom",
+        "DateTo",
+        "DistanceRange",
+        "Division",
+        "DraftPick",
+        "DraftYear",
+        "GameScope",
+        "GameSegment",
+        "Height",
+        "LastNGames",
+        "LeagueID",
+        "Location",
+        "MeasureType",
+        "Month",
+        "OpponentTeamID",
+        "Outcome",
+        "PORound",
+        "PaceAdjust",
+        "PerMode",
+        "Period",
+        "PlayerExperience",
+        "PlayerPosition",
+        "PlusMinus",
+        "Rank",
+        "Season",
+        "SeasonSegment",
+        "SeasonType",
+        "ShotClockRange",
+        "StarterBench",
+        "TeamID",
+        "VsConference",
+        "VsDivision",
+        "Weight"
+      ]
+    },
+    {
+      "name": "player_bio_stats",
+      "url": "http://stats.nba.com/stats/leaguedashplayerbiostats",
+      "parameters": [
+        "College",
+        "Conference",
+        "Country",
+        "DateFrom",
+        "DateTo",
+        "Division",
+        "DraftPick",
+        "DraftYear",
+        "GameScope",
+        "GameSegment",
+        "Height",
+        "LastNGames",
+        "LeagueID",
+        "Location",
+        "Month",
+        "OpponentTeamID",
+        "Outcome",
+        "PORound",
+        "PerMode",
+        "Period",
+        "PlayerExperience",
+        "PlayerPosition",
+        "SeasonSegment",
+        "SeasonType",
+        "ShotClockRange",
+        "StarterBench",
+        "TeamID",
+        "VsConference",
+        "VsDivision",
+        "Weight"
+      ]
+    },
+    {
       "name": "team_shooting",
       "url": "http://stats.nba.com/stats/leaguedashteamptshot",
       "parameters": [
@@ -592,11 +706,7 @@
     {
       "name": "league_standings",
       "url": "http://stats.nba.com/stats/leaguestandings",
-      "parameters": [
-        "LeagueID",
-        "Season",
-        "SeasonType"
-      ]
+      "parameters": ["LeagueID", "Season", "SeasonType"]
     },
     {
       "name": "player_hustle_leaders",
@@ -763,7 +873,7 @@
   "parameters": [
     {
       "name": "Season",
-      "default": "2019-20",
+      "default": "2020-21",
       "values": [
         "1996-97",
         "1997-98",
@@ -793,7 +903,7 @@
     },
     {
       "name": "GraphStartSeason",
-      "default": "2019-20",
+      "default": "2020-21",
       "values": [
         "1996-97",
         "1997-98",
@@ -854,38 +964,27 @@
     {
       "name": "LeagueID",
       "default": "00",
-      "values": [
-        "00"
-      ]
+      "values": ["00"]
     },
     {
       "name": "PlayerID",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "League",
       "default": "00",
-      "values": [
-        "00"
-      ]
+      "values": ["00"]
     },
     {
       "name": "IsOnlyCurrentSeason",
       "default": "1",
-      "values": [
-        "0",
-        "1"
-      ]
+      "values": ["0", "1"]
     },
     {
       "name": "AllStarSeason",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "PerMode",
@@ -907,12 +1006,7 @@
     {
       "name": "SeasonType",
       "default": "Regular Season",
-      "values": [
-        "Regular Season",
-        "Playoffs",
-        "Pre Season",
-        "All Star"
-      ]
+      "values": ["Regular+Season", "Playoffs", "Pre+Season", "All+Star"]
     },
     {
       "name": "MeasureType",
@@ -930,71 +1024,42 @@
     {
       "name": "GroupQuantity",
       "default": "5",
-      "values": [
-        "5"
-      ]
+      "values": ["5"]
     },
     {
       "name": "Outcome",
       "default": "",
-      "values": [
-        "Win",
-        "Loss",
-        ""
-      ]
+      "values": ["Win", "Loss", ""]
     },
     {
       "name": "Location",
       "default": "",
-      "values": [
-        "Home",
-        "Away",
-        ""
-      ]
+      "values": ["Home", "Away", ""]
     },
     {
       "name": "SeasonSegment",
       "default": "",
-      "values": [
-        "EntireSeason",
-        "Pre All-Star",
-        "Post All-Star",
-        ""
-      ]
+      "values": ["EntireSeason", "Pre All-Star", "Post All-Star", ""]
     },
     {
       "name": "DateFrom",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "DateTo",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "VsConference",
       "default": "",
-      "values": [
-        "All",
-        "East",
-        "West",
-        ""
-      ]
+      "values": ["All", "East", "West", ""]
     },
     {
       "name": "Conference",
       "default": "",
-      "values": [
-        "All",
-        "East",
-        "West",
-        ""
-      ]
+      "values": ["All", "East", "West", ""]
     },
     {
       "name": "VsDivision",
@@ -1027,13 +1092,7 @@
     {
       "name": "GameSegment",
       "default": "",
-      "values": [
-        "EntireGame",
-        "First Half",
-        "Second Half",
-        "Overtime",
-        ""
-      ]
+      "values": ["EntireGame", "First Half", "Second Half", "Overtime", ""]
     },
     {
       "name": "ClutchTime",
@@ -1065,153 +1124,77 @@
     {
       "name": "AheadBehind",
       "default": "",
-      "values": [
-        "Ahead or Behind",
-        "Ahead or Tied",
-        "Behind or Tied",
-        ""
-      ]
+      "values": ["Ahead or Behind", "Ahead or Tied", "Behind or Tied", ""]
     },
     {
       "name": "PlusMinus",
       "default": "N",
-      "values": [
-        "N"
-      ]
+      "values": ["N"]
     },
     {
       "name": "PaceAdjust",
       "default": "N",
-      "values": [
-        "N"
-      ]
+      "values": ["N"]
     },
     {
       "name": "Rank",
       "default": "N",
-      "values": [
-        "N"
-      ]
+      "values": ["N"]
     },
     {
       "name": "LastNGames",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "OpponentTeamID",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "Period",
       "default": "0",
-      "values": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10"
-      ]
+      "values": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     },
     {
       "name": "EndPeriod",
       "default": "0",
-      "values": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10"
-      ]
+      "values": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
     },
     {
       "name": "StartPeriod",
       "default": "0",
-      "values": [
-        "0",
-        "1",
-        "2",
-        "3"
-      ]
+      "values": ["0", "1", "2", "3"]
     },
     {
       "name": "PlayoffRound",
       "default": "0",
-      "values": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4"
-      ]
+      "values": ["0", "1", "2", "3", "4"]
     },
     {
       "name": "PORound",
       "default": "0",
-      "values": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4"
-      ]
+      "values": ["0", "1", "2", "3", "4"]
     },
     {
       "name": "Month",
       "default": "0",
-      "values": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12"
-      ]
+      "values": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
     },
     {
       "name": "RangeType",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "StartRange",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "EndRange",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "StatCategory",
@@ -1288,59 +1271,37 @@
     {
       "name": "Scope",
       "default": "S",
-      "values": [
-        "AllPlayers",
-        "Rookies",
-        "S"
-      ]
+      "values": ["AllPlayers", "Rookies", "S"]
     },
     {
       "name": "PlayerScope",
       "default": "",
-      "values": [
-        "All Players",
-        "Rookies",
-        ""
-      ]
+      "values": ["All Players", "Rookies", ""]
     },
     {
       "name": "PlayerOrTeam",
       "default": "Player",
-      "values": [
-        "Player",
-        "Team"
-      ]
+      "values": ["Player", "Team"]
     },
     {
       "name": "GameScope",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "Game_Scope",
       "default": "",
-      "values": [
-        "Last 10",
-        "Yesterday",
-        ""
-      ]
+      "values": ["Last 10", "Yesterday", ""]
     },
     {
       "name": "Player_or_Team",
       "default": "P",
-      "values": [
-        "P",
-        "T"
-      ]
+      "values": ["P", "T"]
     },
     {
       "name": "GameDate",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "gameDate",
@@ -1350,83 +1311,52 @@
     {
       "name": "RookieYear",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "TeamID",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "DayOffset",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "GameID",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "SeasonID",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "PlayerExperience",
       "default": "",
-      "values": [
-        "Rookie",
-        "Sophomore",
-        "Veteran",
-        ""
-      ]
+      "values": ["Rookie", "Sophomore", "Veteran", ""]
     },
     {
       "name": "PlayerPosition",
       "default": "",
-      "values": [
-        "Forward",
-        "Center",
-        "Guard",
-        ""
-      ]
+      "values": ["Forward", "Center", "Guard", ""]
     },
     {
       "name": "Position",
       "default": "",
-      "values": [
-        "Forward",
-        "Center",
-        "Guard",
-        ""
-      ]
+      "values": ["Forward", "Center", "Guard", ""]
     },
     {
       "name": "StarterBench",
       "default": "",
-      "values": [
-        "Starters",
-        "Bench",
-        ""
-      ]
+      "values": ["Starters", "Bench", ""]
     },
     {
       "name": "DraftYear",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "DraftPick",
@@ -1450,37 +1380,27 @@
     {
       "name": "College",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "Country",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "Height",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "Weight",
       "default": "",
-      "values": [
-        ""
-      ]
+      "values": [""]
     },
     {
       "name": "Counter",
       "default": "1000",
-      "values": [
-        "1000"
-      ]
+      "values": ["1000"]
     },
     {
       "name": "Sorter",
@@ -1508,10 +1428,7 @@
     {
       "name": "Direction",
       "default": "DESC",
-      "values": [
-        "DESC",
-        "ASC"
-      ]
+      "values": ["DESC", "ASC"]
     },
     {
       "name": "PtMeasureType",
@@ -1535,13 +1452,7 @@
     {
       "name": "DribbleRange",
       "default": "",
-      "values": [
-        "0 Dribbles",
-        "1 Dribbles",
-        "2 Dribbles",
-        "3-6 Dribbles",
-        "7+ Dribbles"
-      ]
+      "values": ["0 Dribbles", "1 Dribbles", "2 Dribbles", "3-6 Dribbles", "7+ Dribbles"]
     },
     {
       "name": "CloseDefDistRange",
@@ -1556,65 +1467,97 @@
     {
       "name": "ShotDistRange",
       "default": "",
-      "values": [
-        ">=10.0"
-      ]
+      "values": [">=10.0"]
     },
     {
       "name": "TouchTimeRange",
       "default": "",
-      "values": [
-        "Touch < 2 Seconds",
-        "Touch 2-6 Seconds",
-        "Touch 6+ Seconds"
-      ]
+      "values": ["Touch < 2 Seconds", "Touch 2-6 Seconds", "Touch 6+ Seconds"]
     },
     {
       "name": "GeneralRange",
       "default": "",
-      "values": [
-        "Overall",
-        "Catch and Shoot",
-        "Pullups",
-        "Less Than 10 ft"
-      ]
+      "values": ["Overall", "Catch and Shoot", "Pullups", "Less Than 10 ft"]
     },
     {
       "name": "StatType",
       "default": "",
-      "values": [
-        "Traditional",
-        "Advanced",
-        "Tracking"
-      ]
+      "values": ["Traditional", "Advanced", "Tracking"]
     },
     {
       "name": "ClutchTime",
       "default": "",
-      "values": [
-        "Last 5 Minutes"
-      ]
+      "values": ["Last 5 Minutes"]
     },
     {
       "name": "PointDiff",
       "default": "",
-      "values": [
-        "5"
-      ]
+      "values": ["5"]
     },
     {
       "name": "PlayerIDList",
       "default": "0",
-      "values": [
-        "0"
-      ]
+      "values": ["0"]
     },
     {
       "name": "VsPlayerIDList",
       "default": "0",
+      "values": ["0"]
+    },
+    {
+      "name": "Split",
+      "default": "yoy",
+      "values": ["yoy"]
+    },
+    {
+      "name": "DefenseCategory",
+      "default": "Overall",
+      "values": ["Overall"]
+    },
+    {
+      "name": "PlayType",
+      "default": "Transition",
+      "values": ["Transition", "Isolation"]
+    },
+    {
+      "name": "SeasonYear",
+      "default": "2020-21",
       "values": [
-        "0"
+        "1996-97",
+        "1997-98",
+        "1998-99",
+        "1999-00",
+        "2000-01",
+        "2001-02",
+        "2002-03",
+        "2003-04",
+        "2004-05",
+        "2005-06",
+        "2006-07",
+        "2007-08",
+        "2008-09",
+        "2009-10",
+        "2010-11",
+        "2011-12",
+        "2012-13",
+        "2013-14",
+        "2014-15",
+        "2015-16",
+        "2016-17",
+        "2017-18",
+        "2018-19",
+        "2019-20"
       ]
+    },
+    {
+      "name": "TypeGrouping",
+      "default": "offensive",
+      "values": ["offensive", "defensive"]
+    },
+    {
+      "name": "DistanceRange",
+      "default": "5ft Range",
+      "values": ["5ft Range", "8ft Range", "By Zone"]
     }
   ]
 }
