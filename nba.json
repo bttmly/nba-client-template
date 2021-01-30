@@ -1,12 +1,12 @@
 {
   "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36",
-  "referrer": "http://stats.nba.com/",
-  "referer": "http://stats.nba.com/",
-  "origin": "http://stats.nba.com",
+  "referrer": "https://www.nba.com/",
+  "referer": "https://www.nba.com/",
+  "origin": "https://www.nba.com",
   "stats_endpoints": [
     {
       "name": "player_profile",
-      "url": "http://stats.nba.com/stats/playerprofilev2",
+      "url": "https://stats.nba.com/stats/playerprofilev2",
       "parameters": [
         "LeagueID",
         "PerMode",
@@ -15,7 +15,7 @@
     },
     {
       "name": "player_info",
-      "url": "http://stats.nba.com/stats/commonplayerinfo",
+      "url": "https://stats.nba.com/stats/commonplayerinfo",
       "parameters": [
         "PlayerID",
         "SeasonType",
@@ -24,7 +24,7 @@
     },
     {
       "name": "players_info",
-      "url": "http://stats.nba.com/stats/commonallplayers",
+      "url": "https://stats.nba.com/stats/commonallplayers",
       "parameters": [
         "LeagueID",
         "Season",
@@ -33,7 +33,7 @@
     },
     {
       "name": "team_stats",
-      "url": "http://stats.nba.com/stats/leaguedashteamstats",
+      "url": "https://stats.nba.com/stats/leaguedashteamstats",
       "parameters": [
         "Season",
         "AllStarSeason",
@@ -64,7 +64,7 @@
     },
     {
       "name": "team_splits",
-      "url": "http://stats.nba.com/stats/teamdashboardbygeneralsplits",
+      "url": "https://stats.nba.com/stats/teamdashboardbygeneralsplits",
       "parameters": [
         "Season",
         "SeasonType",
@@ -92,14 +92,14 @@
     },
     {
       "name": "team_years",
-      "url": "http://stats.nba.com/stats/commonteamyears",
+      "url": "https://stats.nba.com/stats/commonteamyears",
       "parameters": [
         "LeagueID"
       ]
     },
     {
       "name": "player_splits",
-      "url": "http://stats.nba.com/stats/playerdashboardbygeneralsplits",
+      "url": "https://stats.nba.com/stats/playerdashboardbygeneralsplits",
       "parameters": [
         "Season",
         "SeasonType",
@@ -126,7 +126,7 @@
     },
     {
       "name": "shots",
-      "url": "http://stats.nba.com/stats/shotchartdetail",
+      "url": "https://stats.nba.com/stats/shotchartdetail",
       "parameters": [
         "PlayerID",
         "Season",
@@ -163,7 +163,7 @@
     },
     {
       "name": "scoreboard",
-      "url": "http://stats.nba.com/stats/scoreboard",
+      "url": "https://stats.nba.com/stats/scoreboard",
       "parameters": [
         "LeagueID",
         "DayOffset",
@@ -172,7 +172,7 @@
     },
     {
       "name": "box_score_summary",
-      "url": "http://stats.nba.com/stats/boxscoresummaryv2",
+      "url": "https://stats.nba.com/stats/boxscoresummaryv2",
       "parameters": [
         "GameID",
         "Season",
@@ -186,7 +186,7 @@
     },
     {
       "name": "box_score",
-      "url": "http://stats.nba.com/stats/boxscoretraditionalv2",
+      "url": "https://stats.nba.com/stats/boxscoretraditionalv2",
       "parameters": [
         "GameID",
         "Season",
@@ -200,7 +200,7 @@
     },
     {
       "name": "play_by_play",
-      "url": "http://stats.nba.com/stats/playbyplay",
+      "url": "https://stats.nba.com/stats/playbyplay",
       "parameters": [
         "GameID",
         "StartPeriod",
@@ -209,7 +209,7 @@
     },
     {
       "name": "team_historical_leaders",
-      "url": "http://stats.nba.com/stats/teamhistoricalleaders",
+      "url": "https://stats.nba.com/stats/teamhistoricalleaders",
       "parameters": [
         "LeagueID",
         "Season",
@@ -218,7 +218,7 @@
     },
     {
       "name": "team_info_common",
-      "url": "http://stats.nba.com/stats/teaminfocommon",
+      "url": "https://stats.nba.com/stats/teaminfocommon",
       "parameters": [
         "LeagueID",
         "Season",
@@ -228,7 +228,7 @@
     },
     {
       "name": "common_team_roster",
-      "url": "http://stats.nba.com/stats/commonteamroster",
+      "url": "https://stats.nba.com/stats/commonteamroster",
       "parameters": [
         "LeagueID",
         "Season",
@@ -237,7 +237,7 @@
     },
     {
       "name": "team_player_dashboard",
-      "url": "http://stats.nba.com/stats/teamplayerdashboard",
+      "url": "https://stats.nba.com/stats/teamplayerdashboard",
       "parameters": [
         "MeasureType",
         "PerMode",
@@ -263,7 +263,7 @@
     },
     {
       "name": "lineups",
-      "url": "http://stats.nba.com/stats/leaguedashlineups",
+      "url": "https://stats.nba.com/stats/leaguedashlineups",
       "parameters": [
         "MeasureType",
         "PerMode",
@@ -295,7 +295,7 @@
     },
     {
       "name": "player_tracking",
-      "url": "http://stats.nba.com/stats/leaguedashptstats",
+      "url": "https://stats.nba.com/stats/leaguedashptstats",
       "parameters": [
         "PtMeasureType",
         "PerMode",
@@ -320,7 +320,7 @@
     },
     {
       "name": "homepage_v2",
-      "url": "http://stats.nba.com/stats/homepagev2",
+      "url": "https://stats.nba.com/stats/homepagev2",
       "parameters": [
         "GameScope",
         "LeagueID",
@@ -333,7 +333,7 @@
     },
     {
       "name": "assist_tracker",
-      "url": "http://stats.nba.com/stats/assisttracker",
+      "url": "https://stats.nba.com/stats/assisttracker",
       "parameters": [
         "LeagueID",
         "PerMode",
@@ -343,7 +343,7 @@
     },
     {
       "name": "player_stats",
-      "url": "http://stats.nba.com/stats/leaguedashplayerstats",
+      "url": "https://stats.nba.com/stats/leaguedashplayerstats",
       "parameters": [
         "College",
         "Conference",
@@ -384,7 +384,7 @@
     },
     {
       "name": "player_clutch",
-      "url": "http://stats.nba.com/stats/leaguedashplayerclutch",
+      "url": "https://stats.nba.com/stats/leaguedashplayerclutch",
       "parameters": [
         "AheadBehind",
         "ClutchTime",
@@ -428,7 +428,7 @@
     },
     {
       "name": "team_clutch",
-      "url": "http://stats.nba.com/stats/leaguedashteamclutch",
+      "url": "https://stats.nba.com/stats/leaguedashteamclutch",
       "parameters": [
         "AheadBehind",
         "ClutchTime",
@@ -466,7 +466,7 @@
     },
     {
       "name": "player_shooting",
-      "url": "http://stats.nba.com/stats/leaguedashplayerptshot",
+      "url": "https://stats.nba.com/stats/leaguedashplayerptshot",
       "parameters": [
         "CloseDefDistRange",
         "College",
@@ -511,7 +511,7 @@
     },
     {
       "name": "team_shooting",
-      "url": "http://stats.nba.com/stats/leaguedashteamptshot",
+      "url": "https://stats.nba.com/stats/leaguedashteamptshot",
       "parameters": [
         "CloseDefDistRange",
         "College",
@@ -556,7 +556,7 @@
     },
     {
       "name": "league_game_log",
-      "url": "http://stats.nba.com/stats/leaguegamelog",
+      "url": "https://stats.nba.com/stats/leaguegamelog",
       "parameters": [
         "Counter",
         "DateFrom",
@@ -571,7 +571,7 @@
     },
     {
       "name": "league_leaders",
-      "url": "http://stats.nba.com/stats/leagueLeaders",
+      "url": "https://stats.nba.com/stats/leagueLeaders",
       "parameters": [
         "LeagueID",
         "PerMode",
@@ -583,7 +583,7 @@
     },
     {
       "name": "league_standings",
-      "url": "http://stats.nba.com/stats/leaguestandings",
+      "url": "https://stats.nba.com/stats/leaguestandings",
       "parameters": [
         "LeagueID",
         "Season",
@@ -592,7 +592,7 @@
     },
     {
       "name": "player_hustle_leaders",
-      "url": "http://stats.nba.com/stats/leaguehustlestatsplayerleaders",
+      "url": "https://stats.nba.com/stats/leaguehustlestatsplayerleaders",
       "parameters": [
         "GameScope",
         "LeagueID",
@@ -605,7 +605,7 @@
     },
     {
       "name": "team_hustle_leaders",
-      "url": "http://stats.nba.com/stats/leaguehustlestatsteamleaders",
+      "url": "https://stats.nba.com/stats/leaguehustlestatsteamleaders",
       "parameters": [
         "GameScope",
         "LeagueID",
@@ -618,7 +618,7 @@
     },
     {
       "name": "player_hustle",
-      "url": "http://stats.nba.com/stats/leaguehustlestatsplayer",
+      "url": "https://stats.nba.com/stats/leaguehustlestatsplayer",
       "parameters": [
         "College",
         "Conference",
@@ -658,7 +658,7 @@
     },
     {
       "name": "team_hustle",
-      "url": "http://stats.nba.com/stats/leaguehustlestatsteam",
+      "url": "https://stats.nba.com/stats/leaguehustlestatsteam",
       "parameters": [
         "College",
         "Conference",
@@ -698,7 +698,7 @@
     },
     {
       "name": "team_player_on_off_details",
-      "url": "http://stats.nba.com/stats/teamplayeronoffdetails",
+      "url": "https://stats.nba.com/stats/teamplayeronoffdetails",
       "parameters": [
         "Season",
         "SeasonType",
@@ -725,7 +725,7 @@
     },
     {
       "name": "player_compare",
-      "url": "http://stats.nba.com/stats/playercompare",
+      "url": "https://stats.nba.com/stats/playercompare",
       "parameters": [
         "PlayerIDList",
         "VsPlayerIDList",
