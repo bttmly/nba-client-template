@@ -3,6 +3,16 @@
   "referrer": "https://www.nba.com/",
   "referer": "https://www.nba.com/",
   "origin": "https://www.nba.com",
+  "headers": {
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US",
+    "Accept": "*/*",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36",
+    "Referer": "https://www.nba.com/",
+    "Connection": "keep-alive",
+    "Cache-Control": "no-cache",
+    "Origin": "https://www.nba.com"
+  },
   "stats_endpoints": [
     {
       "name": "player_profile",
